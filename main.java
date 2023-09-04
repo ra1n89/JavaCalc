@@ -32,6 +32,8 @@ public class Main {
             System.exit(0);
         }
         String resultRoman = "";
+
+
         switch(result){
             case 1: resultRoman = "I"; break;
             case 2: resultRoman = "II"; break;
@@ -53,7 +55,87 @@ public class Main {
             case 18: resultRoman = "XVIII"; break;
             case 19: resultRoman = "XIX"; break;
             case 20: resultRoman = "XX"; break;
-
+            case 21: resultRoman = "XXI"; break;
+            case 22: resultRoman = "XXII"; break;
+            case 23: resultRoman = "XXIII"; break;
+            case 24: resultRoman = "XXIV"; break;
+            case 25: resultRoman = "XXV"; break;
+            case 26: resultRoman = "XXVI"; break;
+            case 27: resultRoman = "XXVII"; break;
+            case 28: resultRoman = "XXVIII"; break;
+            case 29: resultRoman = "XXIX"; break;
+            case 30: resultRoman = "XXX"; break;
+            case 31: resultRoman = "XXXI"; break;
+            case 32: resultRoman = "XXXII"; break;
+            case 33: resultRoman = "XXXIII"; break;
+            case 34: resultRoman = "XXXIV"; break;
+            case 35: resultRoman = "XXXV"; break;
+            case 36: resultRoman = "XXXVI"; break;
+            case 37: resultRoman = "XXXVII"; break;
+            case 38: resultRoman = "XXXVIII"; break;
+            case 39: resultRoman = "XXXIX"; break;
+            case 40: resultRoman = "XL"; break;
+            case 41: resultRoman = "XLI"; break;
+            case 42: resultRoman = "XLII"; break;
+            case 43: resultRoman = "XLIII"; break;
+            case 44: resultRoman = "XLIV"; break;
+            case 45: resultRoman = "XLV"; break;
+            case 46: resultRoman = "XLVI"; break;
+            case 47: resultRoman = "XLVII"; break;
+            case 48: resultRoman = "XLVIII"; break;
+            case 49: resultRoman = "XLIX"; break;
+            case 50: resultRoman = "L"; break;
+            case 51: resultRoman = "LI"; break;
+            case 52: resultRoman = "LII"; break;
+            case 53: resultRoman = "LIII"; break;
+            case 54: resultRoman = "LIV"; break;
+            case 55: resultRoman = "LV"; break;
+            case 56: resultRoman = "LVI"; break;
+            case 57: resultRoman = "LVII"; break;
+            case 58: resultRoman = "LVIII"; break;
+            case 59: resultRoman = "LIX"; break;
+            case 60: resultRoman = "LX"; break;
+            case 61: resultRoman = "LXI"; break;
+            case 62: resultRoman = "LXII"; break;
+            case 63: resultRoman = "LXIII"; break;
+            case 64: resultRoman = "LXIV"; break;
+            case 65: resultRoman = "LXV"; break;
+            case 66: resultRoman = "LXVI"; break;
+            case 67: resultRoman = "LXVII"; break;
+            case 68: resultRoman = "LXVIII"; break;
+            case 69: resultRoman = "LXIX"; break;
+            case 70: resultRoman = "LXX"; break;
+            case 71: resultRoman = "LXXI"; break;
+            case 72: resultRoman = "LXXII"; break;
+            case 73: resultRoman = "LXXIII"; break;
+            case 74: resultRoman = "LXXIV"; break;
+            case 75: resultRoman = "LXXV"; break;
+            case 76: resultRoman = "LXXVI"; break;
+            case 77: resultRoman = "LXXVII"; break;
+            case 78: resultRoman = "LXXVIII"; break;
+            case 79: resultRoman = "LXXIX"; break;
+            case 80: resultRoman = "LXXX"; break;
+            case 81: resultRoman = "LXXXI"; break;
+            case 82: resultRoman = "LXXXII"; break;
+            case 83: resultRoman = "LXXXIII"; break;
+            case 84: resultRoman = "LXXXIV"; break;
+            case 85: resultRoman = "LXXXV"; break;
+            case 86: resultRoman = "LXXXVI"; break;
+            case 87: resultRoman = "LXXXVII"; break;
+            case 88: resultRoman = "LXXXVIII"; break;
+            case 89: resultRoman = "LXXXIX"; break;
+            case 90: resultRoman = "LXL"; break;
+            case 91: resultRoman = "LXLI"; break;
+            case 92: resultRoman = "LXLII"; break;
+            case 93: resultRoman = "LXLIII"; break;
+            case 94: resultRoman = "LXLIV"; break;
+            case 95: resultRoman = "LXLV"; break;
+            case 96: resultRoman = "LXLVI"; break;
+            case 97: resultRoman = "LXLVII"; break;
+            case 98: resultRoman = "LXLVIII"; break;
+            case 99: resultRoman = "LXLIX"; break;
+            case 100: resultRoman = "С"; break;
+          
         }
         return resultRoman;
     }
@@ -75,6 +157,10 @@ public class Main {
             String[] parts = expression.split(" ");
             operation = parts[1];
 
+            if (parts.length>3){
+                System.out.println("Type only expression with two operand and one operator");
+                return input;
+            }
             //checking if it less than 10
             try {
                 num1 = Integer.parseInt(parts[0]);
